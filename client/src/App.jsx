@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-const API = "https://piyush-saini-blog-web-app-task-w2qk-muocrog02.vercel.app";
+const API = import.meta.env.VITE_API_URL;
 const empty = { name: "", email: "", password: "", title: "", content: "", role: "user" };
 
 export default function App() {
