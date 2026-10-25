@@ -6,16 +6,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
-
-app.use(cors({
-  origin: [
-    "https://piyush-saini-blog-web-app-task-ie5q.vercel.app",
-    "https://piyush-saini-blog-web-app-task-tlys.vercel.app"
-  ],
-  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"]
-}));
-
+app.use(cors());
 app.use(express.json());
 
 // Models
